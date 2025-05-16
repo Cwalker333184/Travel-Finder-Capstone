@@ -48,7 +48,8 @@ Want to improve this project? Great!
 ---
 
 ##  Wireframe
-![Travel Journal Wireframe](c:\Users\Cwalk\Downloads\Untitled design.png)
+![Untitled design](https://github.com/user-attachments/assets/32524fff-b8cc-4b2f-9fff-2c2e23e5b2cf)
+
 
 ---
 
