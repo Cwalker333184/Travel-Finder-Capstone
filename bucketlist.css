@@ -1,0 +1,111 @@
+/* bucketlist.css */
+
+/* Container styling */
+.container {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  /* List items */
+  #bucketList li {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  #bucketList li:hover {
+    background-color: #e6f2ff;
+  }
+  
+  /* Text inside list item */
+  .item-text {
+    font-size: 1.1rem;
+    user-select: none;
+  }
+  
+  /* Completed (line-through style) */
+  .item-text[style*="line-through"] {
+    color: #6c757d; /* muted text */
+    font-style: italic;
+  }
+  
+  /* Button group styling */
+  #bucketList li div > button {
+    min-width: 80px;
+    font-size: 0.85rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    transition: background-color 0.25s ease;
+  }
+  
+  /* Completed button */
+  .btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+  }
+  .btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+  }
+  
+  /* Edit button */
+  .btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #212529;
+  }
+  .btn-warning:hover {
+    background-color: #e0a800;
+    border-color: #d39e00;
+    color: #212529;
+  }
+  
+  /* Delete button */
+  .btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+  }
+  .btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+  }
+  
+  /* Checkbox */
+  .form-check-input {
+    width: 1.25rem;
+    height: 1.25rem;
+    cursor: pointer;
+  }
+  
+  /* Input and add button container */
+  .input-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Input box */
+  #bucketInput {
+    font-size: 1.1rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Add button */
+  #addBucketItem {
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  
+  

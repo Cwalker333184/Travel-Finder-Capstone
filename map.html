@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Map with Search & Image Upload</title>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+  <link rel="stylesheet" href="map.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <ul class="navbar">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="logs.html">Travel Logs</a></li>
+    <li><a href="bucketlist.html">Bucket List</a></li>
+    <li><a href="map.html" class="active">Map</a></li>
+    <li><a href="itinerary.html">Itinerary</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+  </ul>
+
+  <!-- Search Controls -->
+  <div class="map-controls">
+    <input type="text" id="search-input" placeholder="Search place..." />
+    <button id="search-btn">Search</button>
+  </div>
+
+  <!-- Map Container -->
+  <div id="map" style="height: 90vh;"></div>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  <script src="map.js"></script>
+</body>
+</html>
+
+

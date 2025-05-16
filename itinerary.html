@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trip Planner Itinerary</title>
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+  integrity="sha256-sA+e2eD47xYvC6nMEzE1u6rAQuI1tSm9pJ+U7U6tf/k="
+  crossorigin=""
+/>
+
+<link rel="stylesheet" href="itinerary.css" />
+</head>
+
+<body>
+  <nav>
+    <div class="nav-container">
+      <h1>Trip Planner</h1>
+    </div>
+    
+        
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="logs.html">Travel Logs</a></li>
+               <li><a href="bucketlist.html">Bucket List</a></li>
+               <li><a href="map.html" class="active">Map</a></li>
+               <li><a href="itinerary.html">Itinerary</a></li>
+               <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+  
+
+  <main>
+    <section class="form-section">
+      <h2>Add Itinerary Stop</h2>
+      <form id="itinerary-form">
+        <input type="text" name="location" placeholder="Location" required />
+        <input type="date" name="date" required />
+        <input type="time" name="time" required />
+        <input type="text" name="activity" placeholder="Activity" />
+        <textarea name="notes" placeholder="Notes"></textarea>
+        <button type="submit">Add Stop</button>
+      </form>
+    </section>
+
+    <section class="itinerary-section">
+      <h2>Itinerary</h2>
+      <table id="itinerary-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Location</th>
+            <th>Activity</th>
+            <th>Notes</th>
+            <th>Weather</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
+
+
+  
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+  integrity="sha256-DxQDRPSr5VsPj4rT8ZZvJuYSm5mV0T6X1poN5QZigJ0="
+  crossorigin=""></script>
+  
+  <script src="itinerary.js"></script>
+
+</body>
+</html>

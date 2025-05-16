@@ -1,0 +1,52 @@
+html, body {
+    margin: 0; 
+    padding: 0; 
+    height: 100%; 
+    font-family: Arial, sans-serif;
+  }
+  .navbar {
+    list-style: none; 
+    display: flex; 
+    justify-content: center;
+    background: #222; 
+    margin: 0; 
+    padding: 10px;
+  }
+  .navbar li {
+    margin: 0 15px;
+  }
+  .navbar a {
+    text-decoration: none; 
+    color: #fff; 
+    font-weight: 500;
+    padding: 8px 12px; 
+    border-radius: 5px; 
+    transition: background 0.3s ease;
+  }
+  .navbar a:hover,
+  .navbar a.active {
+    background-color: #444;
+  }
+  .map-controls {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    margin: 10px; 
+    gap: 8px;
+  }
+  .map-controls input[type="text"] {
+    padding: 8px; 
+    font-size: 16px; 
+    width: 250px;
+  }
+  .map-controls button {
+    padding: 8px 12px; 
+    font-size: 16px; 
+    cursor: pointer;
+  }
+  #map {
+    height: calc(100vh - 120px); /* Adjust based on navbar + controls */
+    width: 100%;
+  }
+  
+  

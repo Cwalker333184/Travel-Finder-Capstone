@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery</title>
+  <link rel="stylesheet" href="gallery.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <h2>Image Gallery</h2>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="logs.html">Travel Logs</a></li>
+      <li><a href="bucketlist.html">Bucket List</a></li>
+      <li><a href="map.html">Map</a></li>
+      <li><a href="itinerary.html">Itinerary</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <form id="manual-upload-form">
+    <input type="file" id="manual-image-upload" accept="image/*" required /><br>
+    <input type="text" id="manual-caption" placeholder="Caption" /><br>
+    <input type="text" id="manual-location" placeholder="Location (optional)" /><br>
+    <button type="submit">Add to Gallery</button>
+  </form>
+
+  <div class="slideshow-container" id="slideshow-container">
+    <img id="gallery-image" src="" alt="" />
+    <div class="caption" id="gallery-caption"></div>
+  </div>
+
+  <div class="nav-buttons">
+    <button id="prev-btn">← Prev</button>
+    <button id="delete-btn">🗑 Delete</button>
+    <button id="next-btn">Next →</button>
+  </div>
+
+  <script src="gallery.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Daily Travel Log</title>
+  <link rel="stylesheet" href="Logs.css" />
+  <!-- Bootstrap CDN for quick styling -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <!-- jsPDF for PDF export -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <div class="navbar-nav">
+        <a class="nav-link" href="logs.html">Travel Logs</a>
+        <a class="nav-link" href="bucketlist.html">Bucket List</a>
+        <a class="nav-link" href="map.html">Map</a>
+        <a class="nav-link" href="itinerary.html">Itinerary</a>
+        <a class="nav-link" href="gallery.html">Gallery</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <h1 class="mb-4">Daily Travel Log Entries</h1>
+
+    <form id="logForm" class="needs-validation mb-4" novalidate>
+      <div class="mb-3">
+        <label for="logDate" class="form-label">Date</label>
+        <input type="date" class="form-control" id="logDate" required />
+        <div class="invalid-feedback">Please select a date.</div>
+      </div>
+
+      <div class="mb-3">
+        <label for="logTitle" class="form-label">Title</label>
+        <input
+          type="text"
+          class="form-control"
+          id="logTitle"
+          placeholder="Entry title"
+          required
+        />
+        <div class="invalid-feedback">Title is required.</div>
+      </div>
+
+      <div class="mb-3">
+        <label for="logMood" class="form-label">Mood (any emoji or text)</label>
+        <input
+          type="text"
+          class="form-control"
+          id="logMood"
+          placeholder="e.g. 😀, 😢, 🌞"
+          maxlength="3"
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="logEntry" class="form-label">Travel Entry</label>
+        <textarea
+          class="form-control"
+          id="logEntry"
+          rows="4"
+          placeholder="Write your travel memories..."
+          required
+        ></textarea>
+        <div class="invalid-feedback">Please enter your travel memory.</div>
+      </div>
+
+      <div class="mb-3">
+        <label for="logPhoto" class="form-label">Upload Photo (optional)</label>
+        <input
+          type="file"
+          accept="image/*"
+          class="form-control"
+          id="logPhoto"
+        />
+      </div>
+
+      <button type="submit" class="btn btn-primary">Add Entry</button>
+    </form>
+
+    <div class="export-buttons mb-4 text-center">
+      <button id="exportPdfBtn" class="btn btn-success me-2">
+        Export Entries to PDF
+      </button>
+      <button id="exportTxtBtn" class="btn btn-secondary">
+        Export Entries to Text
+      </button>
+    </div>
+
+    <div id="entriesContainer" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"></div>
+  </main>
+
+  <script src="logs.js"></script>
+</body>
+</html>

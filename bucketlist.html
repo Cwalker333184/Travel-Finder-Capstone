@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Travel Bucket List</title>
+  <link rel="stylesheet" href="Logs.css" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <link rel="stylesheet" href="bucketlist.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <div class="navbar-nav">
+        <a class="nav-link" href="logs.html">Travel Logs</a>
+        <a class="nav-link" href="bucketlist.html">Bucket List</a>
+        <a class="nav-link" href="map.html">Map</a>
+        <a class="nav-link" href="itinerary.html">Itinerary</a>
+        <a class="nav-link" href="gallery.html">Gallery</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <h1 class="mb-4">My Travel Bucket List</h1>
+
+    <div class="input-group mb-3">
+      <input
+        type="text"
+        id="bucketInput"
+        class="form-control"
+        placeholder="Add a destination or experience..."
+      />
+      <button class="btn btn-primary" id="addBucketItem">Add</button>
+    </div>
+
+    <ul id="bucketList" class="list-group mb-4"></ul>
+
+    <div class="text-center">
+      <button class="btn btn-success me-2" id="exportPdfBtn">Export Selected to PDF</button>
+      <button class="btn btn-secondary" id="exportTxtBtn">Export Selected to Text</button>
+    </div>
+  </main>
+
+  <script src="bucketlist.js"></script>
+</body>
+</html>
